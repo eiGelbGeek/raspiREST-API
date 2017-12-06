@@ -1,11 +1,11 @@
 #!/bin/sh
 ###################################
-openhab_url="10.10.80.9"
+openhab_url="0.0.0.0"
 openhab_port="8080"
-tv_ipadresse="10.10.80.120"
-rpi_ipadresse="10.10.80.190"
-av_receiver_ipadress="10.10.80.100"
-vu_plus_ipadress="10.10.80.110"
+tv_ipadresse="0.0.0.0"
+rpi_ipadresse="0.0.0.0"
+av_receiver_ipadress="0.0.0.0"
+vu_plus_ipadress="0.0.0.0"
 ###################################
 
 case $1 in
