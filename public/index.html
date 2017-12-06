@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>raspiREST-API</title>
+    <style media="screen">
+      body { color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; }
+      h1 { text-align: center; }
+      a { color: #333333; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .logo { display: block; margin: auto }
+      .content { margin: 20px 25%; }
+      .docs { background-color: #f4f4f4; border-radius: 4px; padding: 10px;}
+      .docs p { padding: 0; margin: 0; line-height: 28px; font-size: 14px; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+      .docs .method { background-color: #dbdbdb; padding: 4px; border-radius: 2px; margin-right: 4px;}
+      .docs h2 { margin-bottom: 8px;}
+      .docs h2:first-child { margin-top: 0;}
+      .footer { text-align: center; font-size: 12px; margin: 10px 0 50px 0;}
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="/raspberry.png" alt="raspberry" width="256px" />
+    <div class="content">
+      <h1>raspiREST-API</h1>
+
+      <div class="docs">
+        <h2>jointSPACE</h2>
+        <p><span class="method">GET</span> /2/key/&lt;command&gt;</p>
+        <p><span class="method">GET</span> /2/set_source/&lt;source&gt;</p>
+        <p><span class="method">GET</span> /2/get_source/&lt;openhab item&gt;</p>
+        <p><span class="method">GET</span> /2/get_volume/&lt;openhab item&gt;</p>
+        <p><span class="method">GET</span> /2/set_volume/&lt;openhab dimmer item&gt;</p>
+        <p><span class="method">GET</span> /2/get_mute/&lt;openhab item&gt;</p>
+        <p><span class="method">GET</span> /2/set_mute/&lt;true/false&gt;</p>
+
+        <h2>AV Receiver</h2>
+        <p><span class="method">GET</span> /1/set_av_off</p>
+        <p><span class="method">GET</span> /1/set_av_direkt</p>
+        <p><span class="method">GET</span> /1/set_av_extended_stereo</p>
+        <p><span class="method">GET</span> /2/set_av_mute/&lt;ON/OFF&gt;</p>
+
+        <h2>VUplus</h2>
+        <p><span class="method">GET</span> /2/set_vuplus_mute/&lt;ON/OFF&gt;</p>
+
+        <h2>HDMI-CEC</h2>
+        <p><span class="method">GET</span> /1/cec_tv_on</p>
+        <p><span class="method">GET</span> /1/cec_tv_standby</p>
+        <p><span class="method">GET</span> /1/cec_sound_to_av</p>
+
+        <h2>Infrared (irsend)</h2>
+        <p><span class="method">GET</span> /3/irsend/&lt;Remote&gt;/&lt;command&gt;</p>
+
+
+        <h2>Raspberry Pi Commands</h2>
+        <p><span class="method">GET</span> /1/shutdownPI</p>
+      </div>
+
+      <div class="footer">
+        <a href="https://github.com/eiGelbGeek/itunes-api">https://github.com/eiGelbGeek/raspiREST-API</a>
+      </div>
+    </div>
+
+  </body>
+</html>

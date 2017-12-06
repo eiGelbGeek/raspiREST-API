@@ -1,0 +1,6 @@
+log/*
+config/*
+script/*
+.gitignore
+LICENCE
+README.md

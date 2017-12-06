@@ -1,0 +1,42 @@
+#!/bin/sh
+
+set -e
+
+USER_NAME=`whoami`
+APP_PATH=`pwd`
+
+cd "$(dirname "$0")/.."
+
+if ! test $(which node)
+then
+  echo
+  echo "!!!!"
+  echo "You don't have nodeJS installed. You need to install it first."
+  echo
+  echo "Just install it with this command: "
+  echo 'curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -'
+  echo 'sudo apt-get install -y nodejs'
+  echo
+  exit 1
+fi
+
+if ! test $(which forever)
+then
+  echo
+  echo "!!!!"
+  echo "You don't have forever installed. You need to install it first."
+  echo
+  echo "Just install it with this command: "
+  echo 'sudo npm install -g forever'
+  echo
+  exit 1
+fi
+
+mkdir -p log
+
+npm install
+
+sudo chown $USER_NAME:$USER_NAME $APP_PATH/lib/raspi-control.sh
+sudo chmod u+x $APP_PATH/lib/raspi-control.sh
+
+echo "Finished setting up raspiREST-API! install it with script/install."
