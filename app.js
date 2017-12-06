@@ -6,6 +6,18 @@ var app = express()
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+function sendBashCommand (error, req, res){
+  if (error) {
+    console.log(error)
+    res.sendStatus(500)
+  }else{
+    exec('sh lib/' + req.params.param1 + '.sh', function(error, stdout, stderr){
+    	console.log(stdout);
+    })
+    res.sendStatus(200)
+  }
+}
+
 function sendBashCommand1 (error, req, res){
   if (error) {
     console.log(error)
@@ -45,6 +57,10 @@ app.get('/_alive', function(req, res){
 })
 app.get('/', function(req, res){
   res.sendfile('index.html');
+})
+app.get('/0/:param1', function(req, res){
+  error = null
+  sendBashCommand(error, req, res)
 })
 app.get('/1/:param1', function(req, res){
   error = null
