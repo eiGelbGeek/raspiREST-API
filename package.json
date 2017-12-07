@@ -1,0 +1,23 @@
+{
+  "name": "raspiREST-API",
+  "version": "1.0.0",
+  "description": "raspiREST-API",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eiGelbGeek/raspiREST-API"
+  },
+  "author": "Kevin Pirih <kvnprh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eiGelbGeek/raspiREST-API/issues"
+  },
+  "dependencies": {
+    "child_process": "latest",
+    "express": "latest",
+    "path": "latest",
+    "http": "latest"
+  }
+}
