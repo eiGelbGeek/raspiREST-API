@@ -1,3 +1,7 @@
 node_modules
 *.log
 .DS_Store
+raspi-control_buero.sh
+raspbian_setup_buero.sh
+raspbian_script_setup_buero.sh
+index_buero.html
