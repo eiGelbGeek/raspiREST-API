@@ -5,7 +5,6 @@ set -e
 echo "Installing raspiREST-API as Service"
 
 APP_PATH=`pwd`
-USER_NAME=`whoami`
 
 sudo cp $APP_PATH/config/raspiREST-API /etc/init.d/raspiREST-API
 sudo chmod a+x /etc/init.d/raspiREST-API

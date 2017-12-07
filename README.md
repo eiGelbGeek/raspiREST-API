@@ -1,4 +1,4 @@
 # raspiREST-API
 
 This is an Early Version!
-The Installation is untested! 
+The Installation Files are added, but untested!

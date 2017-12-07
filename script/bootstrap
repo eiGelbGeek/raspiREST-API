@@ -2,8 +2,8 @@
 
 set -e
 
-USER_NAME=`whoami`
 APP_PATH=`pwd`
+USER_NAME=`whoami`
 
 cd "$(dirname "$0")/.."
 
