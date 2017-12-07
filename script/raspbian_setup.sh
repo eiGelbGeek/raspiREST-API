@@ -7,7 +7,6 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 apt-get -y update
 apt-get -y upgrade
 apt-get -y install  lirc nodejs autoconf build-essential git cmake libudev-dev libxrandr-dev
-
 npm install -g forever
 
 #HDMI Config
