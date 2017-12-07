@@ -9,8 +9,10 @@ You can do everything you can do in a BashScript via a URL request!
 
 ### Installation
 
-* sudo sh script/raspbian_setup.sh
+* sudo apt-get update && sudo apt-get upgrade
+* sudo apt-get install git
 * cd /etc
 * git clone https://github.com/eiGelbGeek/raspiREST-API.git
+* sudo sh script/raspbian_setup.sh
 * script/bootstrap
 * script/install
