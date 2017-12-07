@@ -16,13 +16,12 @@ You can do everything you can do in a BashScript via a URL request!
 * sudo git clone https://github.com/eiGelbGeek/raspiREST-API.git
 * cd /usr/local/raspiREST-API
 
-#### Now is a good time to make configurations!
-#### Set up the following files according to your wishes!
+#### Now is a good time to make configurations! Set up the following files according to your wishes!
 * sudo nano script/raspbian_setup.sh
 * sudo nano lib/raspi-control.sh
 * sudo nano public/index.html
 
-### Finish Setup
+#### Finish Setup
 * sudo nano script/raspbian_setup.sh
 * sudo sh script/raspbian_setup.sh
 * sudo chmod u+x script/bootstrap
