@@ -9,9 +9,6 @@ vu_plus_ipadress="0.0.0.0"
 ###################################
 
 case $1 in
-  test)
-    touch /Users/kevin/Desktop/$2.txt
-    ;;
   ######## jointSPACE API ########
   key)
     #Key => Standby , VolumeUp , VolumeDown , Mute , Back , Find , RedColour , GreenColour , YellowColour , BlueColour ,
