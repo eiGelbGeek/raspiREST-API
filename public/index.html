@@ -22,37 +22,36 @@
     <img class="logo" src="/raspberry.png" alt="raspberry" width="256px" />
     <div class="content">
       <h1>raspiREST-API</h1>
-
       <div class="docs">
         <h2>jointSPACE</h2>
-        <p><span class="method">GET</span> /2/key/&lt;command&gt;</p>
-        <p><span class="method">GET</span> /2/set_source/&lt;source&gt;</p>
-        <p><span class="method">GET</span> /2/get_source/&lt;openhab item&gt;</p>
-        <p><span class="method">GET</span> /2/get_volume/&lt;openhab item&gt;</p>
-        <p><span class="method">GET</span> /2/set_volume/&lt;openhab dimmer item&gt;</p>
-        <p><span class="method">GET</span> /2/get_mute/&lt;openhab item&gt;</p>
-        <p><span class="method">GET</span> /2/set_mute/&lt;true/false&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;command&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;source&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;openhab item&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;openhab item&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;openhab dimmer item&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;openhab item&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=key&v2=&lt;true/false&gt;</p>
 
         <h2>AV Receiver</h2>
-        <p><span class="method">GET</span> /1/set_av_off</p>
-        <p><span class="method">GET</span> /1/set_av_direkt</p>
-        <p><span class="method">GET</span> /1/set_av_extended_stereo</p>
-        <p><span class="method">GET</span> /2/set_av_mute/&lt;ON/OFF&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=set_av_off</p>
+        <p><span class="method">GET</span> /raspi?v1=set_av_direkt</p>
+        <p><span class="method">GET</span> /raspi?v1=set_av_extended_stereo</p>
+        <p><span class="method">GET</span> /raspi?v1=set_av_mute&v2=&lt;ON/OFF&gt;</p>
 
         <h2>VUplus</h2>
-        <p><span class="method">GET</span> /2/set_vuplus_mute/&lt;ON/OFF&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=set_vuplus_mute&v2=lt;ON/OFF&gt;</p>
 
         <h2>HDMI-CEC</h2>
-        <p><span class="method">GET</span> /1/cec_tv_on</p>
-        <p><span class="method">GET</span> /1/cec_tv_standby</p>
-        <p><span class="method">GET</span> /1/cec_sound_to_av</p>
+        <p><span class="method">GET</span> /raspi?v1=cec_tv_on</p>
+        <p><span class="method">GET</span> /raspi?v1=cec_tv_standby</p>
+        <p><span class="method">GET</span> /raspi?v1=cec_sound_to_av</p>
 
         <h2>Infrared (irsend)</h2>
-        <p><span class="method">GET</span> /3/irsend/&lt;Remote&gt;/&lt;command&gt;</p>
+        <p><span class="method">GET</span> /raspi?v1=irsend&v2=&lt;Remote&gt;&v3=&lt;command&gt;</p>
 
 
         <h2>Raspberry Pi Commands</h2>
-        <p><span class="method">GET</span> /1/shutdownPI</p>
+        <p><span class="method">GET</span> /raspi?v1=shutdownPI</p>
       </div>
 
       <div class="footer">
