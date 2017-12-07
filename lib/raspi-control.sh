@@ -118,7 +118,7 @@ case $1 in
   #
   ######## irsend Commands ########
   irsend)
-    #$2 = Name of Remote (eg. AppleRemoteWohnzimmer)
+    #$2 = Name of Remote (eg. AppleTV)
     #$3 = Key => KEY_MENU , KEY_OK , KEY_PLAYPAUSE , KEY_DOWN , KEY_UP , KEY_LEFT , KEY_RIGHT
     irsend SEND_ONCE $2 $3
     ;;
