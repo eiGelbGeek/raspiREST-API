@@ -39,4 +39,4 @@ npm install
 sudo chown $USER_NAME:$USER_NAME $APP_PATH/lib/raspi-control.sh
 sudo chmod u+x $APP_PATH/lib/raspi-control.sh
 
-echo "Finished setting up raspiREST-API! install it with script/install."
+echo "Finished setting up raspiREST-API! install it with sudo script/install."
