@@ -17,7 +17,6 @@ echo "hdmi_mode=31" >> /boot/config.txt
 
 #Keyboard Config
 >/etc/default/keyboard
-
 cat <<EOF > /etc/default/keyboard
 # KEYBOARD CONFIGURATION FILE
 
@@ -53,7 +52,6 @@ echo "lirc_rpi gpio_out_pin=17 gpio_in_pin=18" >> /etc/modules
 echo "dtoverlay=lirc-rpi,gpio_out_pin=17,gpio_in_pin=18" >> /boot/config.txt
 
 >/etc/lirc/hardware.conf
-
 cat <<EOF > /etc/lirc/hardware.conf
 # /etc/lirc/hardware.conf
 #
@@ -85,7 +83,6 @@ EOF
 
 #Add Remotes
 >/etc/lirc/lircd.conf
-
 cat <<EOF > /etc/lirc/lircd.conf
 # Please make this file available to others
 # by sending it to <lirc@bartelmus.de>
