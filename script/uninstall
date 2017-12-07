@@ -2,5 +2,6 @@
 
 echo "Uninstalling Service raspiREST-API..."
 
-/etc/init.d/raspiREST-API stop
-sudo update-rc.d -f raspiREST-API remove
+/etc/init.d/raspiRESTapi stop
+sudo update-rc.d -f raspiRESTapi remove
+sudo rm /etc/init.d/raspiRESTapi

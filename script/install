@@ -6,9 +6,10 @@ echo "Installing raspiREST-API as Service"
 
 APP_PATH=`pwd`
 
-sudo cp $APP_PATH/config/raspiREST-API /etc/init.d/raspiREST-API
-sudo chmod a+x /etc/init.d/raspiREST-API
-sudo update-rc.d raspiREST-API defaults
-/etc/init.d/raspiREST-API start
+sudo cp $APP_PATH/config/raspiRESTapi /etc/init.d/raspiRESTapi
+sudo chmod a+x /etc/init.d/raspiRESTapi
+sudo update-rc.d raspiRESTapi defaults
+sudo systemctl stop raspiRESTapi.service
+sudo systemctl start raspiRESTapi.service
 
 echo "raspiREST-API is running..."

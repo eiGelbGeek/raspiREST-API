@@ -1,0 +1,30 @@
+#! /bin/sh
+# /etc/init.d/raspiRESTapi
+
+### BEGIN INIT INFO
+# Provides:          test
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Example initscript
+# Description:       This file should be used to construct scripts to be
+#                    placed in /etc/init.d.
+### END INIT INFO
+
+case "$1" in
+   start)
+    echo "Starting raspiREST-API"
+    exec forever start /usr/local/raspiREST-API/app.js
+   ;;
+   stop)
+    echo "Stopping raspiREST-API"
+    exec forever stop /usr/local/raspiREST-API/app.js
+    ;;
+  *)
+    echo "Usage: /etc/init.d/raspiREST-API {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0

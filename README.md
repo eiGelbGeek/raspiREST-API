@@ -11,8 +11,12 @@ You can do everything you can do in a BashScript via a URL request!
 
 * sudo apt-get update && sudo apt-get upgrade
 * sudo apt-get install git
-* cd /etc
-* git clone https://github.com/eiGelbGeek/raspiREST-API.git
+* cd /usr/local
+* sudo git clone https://github.com/eiGelbGeek/raspiREST-API.git
+* cd /usr/local/raspiREST-API
 * sudo sh script/raspbian_setup.sh
-* script/bootstrap
-* script/install
+* sudo chmod u+x script/bootstrap
+* sudo chmod u+x script/install
+* sudo chmod u+x script/uninstall
+* sudo script/bootstrap
+* sudo script/install
