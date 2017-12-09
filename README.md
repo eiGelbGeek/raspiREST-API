@@ -7,14 +7,16 @@
 #### Setup for Raspberry Pi Zero W
 * Install Raspbian Strech Lite on SD-Card
 * Add wpa_supplicant.conf to boot Partion (SD-Card)
-* `country=DE`
-* `ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev`
-* `update_config=1`
-* `network={`
-* `     ssid="Name"`
-* `     psk="Password"`
-* `     key_mgmt=WPA-PSK`
-* `}`
+```
+country=DE
+ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ update_config=1
+ network={
+      ssid="Name"
+      psk="Password"
+      key_mgmt=WPA-PSK
+ }
+```
 * Activate SSH `nano path_to_boot_partion/ssh` and write this empty file do disk
 * Boot the RaspberryPi
 * `sudo apt-get update && sudo apt-get upgrade`
