@@ -6,10 +6,9 @@ apt-get -y upgrade
 apt-get -y install  lirc autoconf build-essential git cmake libudev-dev libxrandr-dev
 
 #NodeJS!
-wget https://nodejs.org/dist/latest-v8.x/node-v8.9.2-linux-armv6l.tar.gz
-node-v8.9.2-linux-armv6l.tar.gz
-tar -xvf node-v8.9.2-linux-armv6l.tar.gz
-cd node-v8.9.2-linux-armv6l
+wget https://nodejs.org/dist/latest-v8.x/node-v8.9.3-linux-armv6l.tar.gz
+tar -xvf node-v8.9.3-linux-armv6l.tar.gz
+cd node-v8.9.3-linux-armv6l
 cp -R * /usr/local/
 
 npm install -g forever
