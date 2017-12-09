@@ -10,9 +10,9 @@
 * `country=DE`
 * `ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev`
 * `update_config=1`
-* `network={``
-* `     ssid="Name"``
-* `     psk="Password"``
+* `network={`
+* `     ssid="Name"`
+* `     psk="Password"`
 * `     key_mgmt=WPA-PSK`
 * `}`
 * Activate SSH `nano path_to_boot_partion/ssh` and write this empty file do disk
