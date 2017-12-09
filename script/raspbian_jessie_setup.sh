@@ -1,12 +1,17 @@
 #!/bin/bash
 
-#Scource NodeJS!
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-
 #Update / Install
 apt-get -y update
 apt-get -y upgrade
 apt-get -y install  lirc nodejs autoconf build-essential git cmake libudev-dev libxrandr-dev
+
+#NodeJS!
+wget https://nodejs.org/dist/latest-v8.x/node-v8.9.2-linux-armv6l.tar.gz
+node-v8.9.2-linux-armv6l.tar.gz
+tar -xvf node-v8.9.2-linux-armv6l.tar.gz
+cd node-v8.9.2-linux-armv6l
+cp -R * /usr/local/
+
 npm install -g forever
 
 #HDMI Config
