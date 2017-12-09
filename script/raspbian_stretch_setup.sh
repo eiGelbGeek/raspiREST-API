@@ -3,7 +3,7 @@
 #Update / Install
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install  lirc nodejs autoconf build-essential git cmake libudev-dev libxrandr-dev
+apt-get -y install  lirc autoconf build-essential git cmake libudev-dev libxrandr-dev
 
 #NodeJS!
 wget https://nodejs.org/dist/latest-v8.x/node-v8.9.2-linux-armv6l.tar.gz
