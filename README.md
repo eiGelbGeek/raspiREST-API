@@ -34,6 +34,7 @@ country=DE
 #### Finish Setup
 * `sudo nano script/raspbian_stretch_setup.sh`
 * `sudo sh script/raspbian_stretch_setup.sh`
+* `cd /usr/local/raspiREST-API`
 * `sudo chmod u+x script/bootstrap`
 * `sudo chmod u+x script/install`
 * `sudo chmod u+x script/uninstall`
