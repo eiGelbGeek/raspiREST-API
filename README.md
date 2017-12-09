@@ -19,6 +19,7 @@ country=DE
 ```
 * Activate SSH `nano path_to_boot_partion/ssh` and write this empty file do disk
 * Boot the RaspberryPi
+* Configure your RaspberryPi with `sudo raspi-config`
 * `sudo apt-get update && sudo apt-get upgrade`
 * `sudo apt-get install git`
 * `cd /usr/local`
