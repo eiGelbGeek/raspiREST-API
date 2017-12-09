@@ -14,8 +14,10 @@ then
   echo "You don't have nodeJS installed. You need to install it first."
   echo
   echo "Just install it with this command: "
-  echo 'curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -'
-  echo 'sudo apt-get install -y nodejs'
+  echo "wget https://nodejs.org/dist/latest-v8.x/node-v8.9.3-linux-armv6l.tar.gz"
+  echo "tar -xvf node-v8.9.3-linux-armv6l.tar.gz"
+  echo "cd node-v8.9.3-linux-armv6l"
+  echo "cp -R * /usr/local/"
   echo
   exit 1
 fi
